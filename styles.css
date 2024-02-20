@@ -1,0 +1,164 @@
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('outfit/static/Outfit-Regular.ttf') format('truetype');
+    /* Add more @font-face declarations for other font weights/styles if needed */
+}
+
+.background-container {
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    background-image: url('Group 5.png');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add more styles as needed */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-30%);
+    padding: 50px;
+    text-align: left; /* Align text to the left */
+    color: white; /* Change text color */
+    font-family: 'Outfit', sans-serif;
+}
+
+.overlay-text h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 20px;
+    margin: 0; /* Remove default margin */
+    max-width: 500px;
+}
+
+.content-container {
+    padding: 50px;
+    margin-top: 100px; /* Add top margin to create space */
+    margin-bottom: 50px;
+    font-family: 'Outfit', sans-serif;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+}
+
+.content-container img {
+    width: 400px; /* Set desired width */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    margin-right: 100px; /* Add spacing between image and text */
+    margin-top: 50px;
+}
+
+.content-container  h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.content-container  p {
+    font-size: 20px;
+    margin: 0; /* Remove default margin */
+    max-width: 500px;
+}
+
+.my-ideas-alive-container {
+    margin-top: 50px; /* Add margin-top to create space */
+    margin-bottom: 50px; /* Add margin-top to create space */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.my-ideas-alive-container h2 {
+    font-size: 64px; /* Set font size to match h1 */
+    margin-bottom: 50px; 
+    font-family: 'Outfit', sans-serif;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    /* overflow-x: hidden; */
+
+}
+
+button {
+    display: block; /* Change display to block to make the buttons stack vertically */
+    margin: 10px auto; /* Adjust margin as needed */
+    background-color: #BDD2D0; /* Set button background color */
+    color: white; /* Set text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Make the buttons rounded */
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Align items horizontally at the center */
+    margin-top: 30px; /* Add margin top as needed */
+}
+
+.button-container button {
+    margin: 0 5px; /* Add margin around buttons */
+}
+
+.overlay-button {
+    position: absolute;
+    top: 450px;
+    left: 850px;
+}
+
+.image-container {
+    position: relative;
+    /* display: inline-block; */
+    flex: 0 0 auto; 
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 70%;
+    margin: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.button-container button {
+    margin: 0 5px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.carousel-slide > img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
